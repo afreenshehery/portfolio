@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/HTML5%20files/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Mergis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<meta name="generator" content="Construct 3">
+	<meta name="author" content="Otavio Furlan">
+	<link rel="manifest" href="http://127.0.0.1:5500/HTML5%20files/appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="http://127.0.0.1:5500/HTML5%20files/icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="http://127.0.0.1:5500/HTML5%20files/icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="http://127.0.0.1:5500/HTML5%20files/icons/icon-512.png">
+	<link rel="icon" type="image/png" href="http://127.0.0.1:5500/HTML5%20files/icons/icon-512.png">
+
+	<link rel="stylesheet" href="./Mergis_files/style.css">
+
+<script type="module" src="./Mergis_files/c3runtime.js.download"></script></head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.
+			</p>
+		</div>
+	</noscript>
+	<script src="./Mergis_files/supportcheck.js.download"></script>
+	<script src="./Mergis_files/offlineclient.js.download" type="module"></script>
+	<script src="./Mergis_files/main.js.download" type="module"></script>
+	<script src="./Mergis_files/register-sw.js.download" type="module"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<canvas style="width: 716px; height: 945px; margin-left: 0px; margin-top: 0px;" width="716" height="945"></canvas></body></html>
