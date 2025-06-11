@@ -1,0 +1,21 @@
+.resume-button-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 40px 0;
+}
+
+.download-btn {
+     background-color: #004aad;
+     color: white;
+     padding: 12px 24px;
+     border-radius: 12px;
+     font-weight: bold;
+     text-decoration: none;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+     background-color: #002f6c;
+}

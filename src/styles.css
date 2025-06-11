@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html,
+body {
+     font-family: 'Inter', sans-serif;
+     background: #ffffff;
+     color: #0f172a;
+     scroll-behavior: smooth;
+}
+
+a {
+     text-decoration: none;
+     color: inherit;
+}
+
+
+:root {
+     --primary: #2563eb;
+     --accent: #facc15;
+     --text-dark: #111827;
+}
+
+html {
+     scroll-behavior: smooth;
+}

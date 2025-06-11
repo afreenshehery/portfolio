@@ -1,0 +1,83 @@
+<section class="projects-section" id="projects">
+     <h2 class="section-title">Projects</h2>
+
+     <div class="project-card" *ngFor="let project of projects; let i = index" [ngClass]="{ 'reverse': i % 2 !== 0 }">
+          <div class="project-image">
+               <img [src]="project.image" [alt]="project.title" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src={{project.logo}} alt="">{{ project.title }}</h3>
+               <p>{{ project.description }}</p>
+               <!-- <a class="project-button" [href]="project.link" target="_blank">View Project</a> -->
+               <a href="https://campusfloor.com/index.html" target="_blank" class="btn visit-link">
+                    Visit Website <span>&rarr;</span>
+               </a>
+          </div>
+     </div>
+</section>
+
+
+<!-- <section class="projects-section">
+     <h2 class="section-title">Projects</h2>
+
+     <div class="project-card">
+          <div class="project-image">
+               <img src="/assets/campusfloor.com_index.html.png" alt="KartBuddy" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src="https://campusfloor.com/assets/images/logos/logo.png" alt=""> </h3>
+               <p>A resource-sharing platform with competitive coding challenges.</p>
+               <a class="project-button" href="/assets/campusfloor.com_index.html.png" target="_blank">View
+                    Project</a>
+          </div>
+     </div>
+
+     <div class="project-card reverse">
+          <div class="project-image">
+               <img src="/assets/miro.medium.com_v2_resize_fit_1100_format_webp_1_-WmwD09u5jg1m6hjVpnNww.jpeg.png"
+                    alt="GMAT Prep Tool" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src="https://miro.medium.com/v2/resize:fill:44:44/1*UKlGYo0e9I_WNmzHcLZkHw.png"
+                         alt=""> GMAT Prep Tool</h3>
+               <p>A platform for GMAT preparation with practice tests and analytics.</p>
+               <a class="project-button" href="https://github.com/afreenshehery/GMAT-Prep" target="_blank">View
+                    Project</a>
+          </div>
+     </div>
+
+     <div class="project-card">
+          <div class="project-image">
+               <img src="assets/project3.png" alt="Quiz Game" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src="assets/logo3.png" alt=""> Quiz Game</h3>
+               <p>Interactive quiz game with a timer and score tracking for learning fun.</p>
+               <a class="project-button" href="https://github.com/afreenshehery/quiz-game" target="_blank">View
+                    Project</a>
+          </div>
+     </div>
+
+     <div class="project-card reverse">
+          <div class="project-image">
+               <img src="assets/project4.png" alt="Portfolio Website" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src="assets/logo4.png" alt=""> Portfolio Website</h3>
+               <p>Modern, responsive portfolio built with Angular and AOS animations.</p>
+               <a class="project-button" href="https://github.com/afreenshehery/portfolio" target="_blank">View
+                    Project</a>
+          </div>
+     </div>
+
+     <div class="project-card">
+          <div class="project-image">
+               <img src="assets/project5.png" alt="Blog Platform" />
+          </div>
+          <div class="project-content">
+               <h3><img class="logo" src="assets/logo5.png" alt=""> Maptia Clone</h3>
+               <p>A blogging platform for storytelling and travel inspiration.</p>
+               <a class="project-button" href="https://github.com/afreenshehery/maptia" target="_blank">View Project</a>
+          </div>
+     </div>
+</section> -->
