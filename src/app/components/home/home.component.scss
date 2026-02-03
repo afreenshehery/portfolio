@@ -4,14 +4,14 @@
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-     padding: 100px 10% 80px;
+     padding: 50px 10% 80px;
      display: flex;
      align-items: center;
      justify-content: center;
 
      .hero-content {
           display: flex;
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
           align-items: center;
           justify-content: space-between;
           gap: 40px;
@@ -19,7 +19,8 @@
           width: 100%;
 
           .text-area {
-               flex: 1 1 500px;
+               flex: 3 1 0;
+               min-width: 0;
 
                h1 {
                     font-size: 3rem;
@@ -40,7 +41,7 @@
                }
 
                p {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                     color: #4b5563;
                     margin-bottom: 30px;
                }
@@ -48,6 +49,7 @@
                .btn {
                     display: inline-block;
                     padding: 12px 25px;
+                    margin-left: 12px;
                     font-size: 1rem;
                     font-weight: 600;
                     background-color: var(--primary);
@@ -63,7 +65,8 @@
           }
 
           .image-area {
-               flex: 1 1 400px;
+               flex: 2 1 0;
+               min-width: 0;
                text-align: center;
 
                img {
