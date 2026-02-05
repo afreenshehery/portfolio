@@ -10,7 +10,8 @@ export class HeaderComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['about', 'projects', 'resume', 'contact'];
+    const sections = ['about', 'experience', 'projects', 'resume', 'contact'];
+
 
     for (const id of sections) {
       const section = document.getElementById(id);

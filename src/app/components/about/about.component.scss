@@ -74,3 +74,27 @@
      height: auto;
      border-radius: 12px;
 }
+
+.education-mini {
+     margin-top: 25px;
+     padding: 15px 18px;
+     background: #f3f4f6;
+     border-radius: 10px;
+     font-size: 0.95rem;
+
+     h4 {
+          margin-bottom: 6px;
+          color: var(--primary);
+          font-weight: 700;
+          font-size: 2.2rem;
+          font-weight: 800;
+          // margin-bottom: 10px;
+
+     }
+
+     p {
+          margin: 0;
+          color: #4b5563;
+          line-height: 1.6;
+     }
+}
